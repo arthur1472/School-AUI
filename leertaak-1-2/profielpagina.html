@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profiel</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-yellow-400 border-b-8 border-blue-600 inline-flex w-full h-20">
+            <nav class="flex flex-wrap items-end">
+                <a class="border-t border-r border-black px-5 py-1 bg-white" href="homepagina.html">Home</a>
+                <a class="border-t border-r border-black px-5 py-1 bg-blue-600 text-white" href="profielpagina.html">Profiel</a>
+                <a class="border-t border-r border-black px-5 py-1 bg-white" href="voortgangpagina.html">Voortgang</a>
+            </nav>
+            <div class="flex flex-wrap align-middle items-center mt-3 absolute right-0 mr-3">
+                <p class="text-center mr-4">Arthur</p>
+                <img class="rounded rounded-full" src="https://via.placeholder.com/50x50">
+            </div>
+        </header>
+        <section class="mt-10 ml-16">
+            <h1 class="text-3xl font-bold mb-6">Profiel</h1>
+            <form method="POST" class="flex flex-wrap">
+                <div class="w-1/2 flex-wrap flex justify-end">
+                    <div class="w-2/4 flex-wrap flex justify-end">
+                        <label class="mr-6" for="firstName">Voornaam:</label>
+                    </div>
+                    <div class="w-1/4 mr-12 mb-4">
+                        <input class="border border-black" id="firstName" name="firstName" type="text">
+                    </div>
+
+                    <div class="w-2/4 flex-wrap flex justify-end">
+                        <label class="mr-6" for="lastName">Achternaam:</label>
+                    </div>
+                    <div class="w-1/4 mr-12 mb-4">
+                        <input class="border border-black" id="lastName" name="lastName" type="text">
+                    </div>
+
+                    <div class="w-2/4 flex-wrap flex justify-end">
+                        <label class="mr-6" for="address">Adres:</label>
+                    </div>
+                    <div class="w-1/4 mr-12 mb-4">
+                        <textarea class="border border-black" id="address" name="address"></textarea>
+                    </div>
+
+                    <div class="w-2/4 flex-wrap flex justify-end">
+                        <label class="mr-6" for="email">E-mail:</label>
+                    </div>
+                    <div class="w-1/4 mr-12 mb-4">
+                        <input class="border border-black" id="email" name="email" type="text">
+                    </div>
+
+                    <div class="w-2/4 flex-wrap flex justify-end">
+                        <label class="mr-6" for="phone">Telefoonnr:</label>
+                    </div>
+                    <div class="w-1/4 mr-12 mb-4">
+                        <input class="border border-black" id="phone" name="phone" type="text">
+                    </div>
+
+                    <div class="w-2/4 flex-wrap flex justify-end">
+                        <label class="mr-6">Geslacht:</label>
+                    </div>
+                    <div class="w-1/4 mr-12 mb-4 items-center">
+                        <input class="" id="man" name="gender" type="radio"> <label class="mr-3" for="man">Man</label>
+                        <input class="" id="woman" name="gender" type="radio"> <label for="woman">Vrouw</label>
+                    </div>
+
+                    <div class="w-2/4 flex-wrap flex justify-end">
+                        <label class="mr-6" for="birthDay">Geboortedatum:</label>
+                    </div>
+                    <div class="w-1/4 mr-12 mb-4 items-center">
+                        <input class="border border-black" id="birthDay" name="birthDay" type="date">
+                    </div>
+
+
+                </div>
+                <div class="w-1/2 flex-wrap flex h-0">
+                    <div class="w-1/5 flex-wrap flex mb-4">
+                        <label for="studentNumber">Studentennr:</label>
+                    </div>
+                    <div class="w-4/5 mb-4">
+                        <input class="border border-black" id="studentNumber" name="studentNumber" type="number">
+                    </div>
+
+                    <div class="w-1/5 flex-wrap flex">
+                        <label for="class">Klas:</label>
+                    </div>
+                    <div class="w-4/5 mb-4">
+                        <select id="class" class="border border-black" name="class">
+                            <option value="V1A">V1A</option>
+                            <option value="V1B">V1B</option>
+                            <option value="V1C">V1C</option>
+                            <option value="V1D">V1D</option>
+                            <option value="V1E">V1E</option>
+                            <option value="V1F">V1F</option>
+                            <option value="V1G">V1G</option>
+                        </select>
+                    </div>
+
+                    <div class="w-1/5 flex-wrap flex mb-4">
+                        <label>Gekozen Studierichting:</label>
+                    </div>
+                    <div class="w-4/5 mb-4 flex-col flex">
+                        <div class="ml-2 mb-1 inline">
+                            <input id="sne" name="study" type="radio"> <label class="ml-1" for="sne">SNE</label>
+                        </div>
+                        <div class="ml-2 mb-1 inline">
+                            <input id="bim" name="study" type="radio"> <label class="ml-1" for="bim">BIM</label>
+                        </div>
+                        <div class="ml-2 mb-1 inline">
+                            <input id="sie" name="study" type="radio"> <label class="ml-1" for="sie">SIE</label>
+                        </div>
+                        <div class="ml-2 inline">
+                            <input id="ti" name="study" type="radio"> <label class="ml-1" for="ti">TI</label>
+                        </div>
+                    </div>
+
+                    <div class="w-1/5 flex-wrap flex mb-4">
+                        <label>Foto:</label>
+                    </div>
+                    <div class="w-4/5 mb-4">
+                        <img src="https://via.placeholder.com/200x200">
+                    </div>
+
+                    <div class="w-1/5 flex-wrap flex mb-4"></div>
+                    <div class="w-4/5 mb-4">
+                        <button type="button" class="bg-blue-600 text-sm text-white border border-gray-700 py-2 px-4" style="border-radius: 1rem">Change</button>
+                    </div>
+
+                </div>
+<!--                <div class="col-span-3">-->
+<!--                    <label for="studentNumber">Studentennr:</label>-->
+<!--                    <input class="w-full border border-black" id="studentNumber" name="studentNumber" type="number">-->
+<!--                </div>-->
+
+<!--                <label for="birthDay">:</label>-->
+<!--                <input >-->
+<!--                <br>-->
+
+<!--                <br>-->
+<!--                <label for="class">Klas:</label>-->
+<!--                <select id="class" name="class">-->
+<!--                    <option value="V1A">V1A</option>-->
+<!--                    <option value="V1B">V1B</option>-->
+<!--                    <option value="V1C">V1C</option>-->
+<!--                    <option value="V1D">V1D</option>-->
+<!--                    <option value="V1E">V1E</option>-->
+<!--                    <option value="V1F">V1F</option>-->
+<!--                    <option value="V1G">V1G</option>-->
+<!--                </select>-->
+<!--                <br>-->
+
+
+<!--                <br>-->
+<!--                <label>Foto:</label>-->
+<!--                <img src="https://via.placeholder.com/100x100">-->
+<!--                <br>-->
+<!--                <button>Change</button>-->
+<!--                <br><br>-->
+<!--                <button type="submit">Submit</button>-->
+            </form>
+        </section>
+        <footer class="absolute bottom-0 border-t-4 border-black w-full italic">
+            <div class=" flex flex-wrap justify-center w-full my-4">
+                <p>Deze opdracht is gemaakt in het kaden van het vak Analyse & User Interfaces</p>
+            </div>
+            <div class="flex flex-wrap mb-4">
+                <p class="ml-6">Auteur: Arthur Sjouw</p>
+                <p class="absolute right-0 mr-6">Datum: geef hier een datum</p>
+            </div>
+        </footer>
+    </body>
+</html>

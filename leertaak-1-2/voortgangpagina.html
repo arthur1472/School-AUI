@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Voortgang</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-yellow-400 border-b-8 border-blue-600 inline-flex w-full h-20">
+            <nav class="flex flex-wrap items-end">
+                <a class="border-t border-r border-black px-5 py-1 bg-white" href="homepagina.html">Home</a>
+                <a class="border-t border-r border-black px-5 py-1 bg-white" href="profielpagina.html">Profiel</a>
+                <a class="border-t border-r border-black px-5 py-1 bg-blue-600 text-white" href="voortgangpagina.html">Voortgang</a>
+            </nav>
+            <div class="flex flex-wrap align-middle items-center mt-3 absolute right-0 mr-3">
+                <p class="text-center mr-4">Arthur</p>
+                <img class="rounded rounded-full" src="https://via.placeholder.com/50x50">
+            </div>
+        </header>
+        <section class="mt-10 ml-16">
+            <h1 class="text-3xl font-bold mb-6">Voortgang</h1>
+            <div class="flex">
+                <div class="w-1/2 flex flex-col">
+                    <div>
+                        <table>
+                            <thead class="border-2 border-black border-collapse bg-green-300">
+                            <tr>
+                                <td>Vakcode</td>
+                                <td class="text-center">ECTS</td>
+                                <td>Datum behaald</td>
+                            </tr>
+                            </thead>
+                            <tbody class="border-2 border-black border-collapse bg-green-300">
+                            <tr>
+                                <td>TICT-V1PROG-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1CSN-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1ICOR-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1MOD-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1PROF-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1IDP-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TCIF-V1AUI-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1OODC-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1GP-15</td>
+                                <td><input type="number" name="ects[]" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" value="2016-10-30" class="bg-green-300"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <button type="button" class="mt-4 bg-gray-400 text-black px-8 py-2">Bereken Studietempo</button>
+                    </div>
+
+                </div>
+
+                <div class="w-1/2 flex-col flex">
+                    <div>
+                        <p class="w-24 inline-block">Student: </p><p class="w-0 inline">Jens</p>
+                    </div>
+                    <div>
+                        <p class="w-24 inline-block">Telefoon: </p><p class="w-0 inline">0612345678</p>
+                    </div>
+                    <div>
+                        <p class="w-24 inline-block">Email: </p><p class="w-0 inline">arthur.sjouw@student.hu.nl</p>
+                    </div>
+                    <div class="w-full mt-10">
+                        <img class="border border-black" src="https://via.placeholder.com/300x100">
+                    </div>
+
+                    <div class="w-full mt-10">
+                        <img src="https://via.placeholder.com/300x100">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        </section>
+        <footer class="absolute bottom-0 border-t-4 border-black w-full italic">
+            <div class=" flex flex-wrap justify-center w-full my-4">
+                <p>Deze opdracht is gemaakt in het kaden van het vak Analyse & User Interfaces</p>
+            </div>
+            <div class="flex flex-wrap mb-4">
+                <p class="ml-6">Auteur: Arthur Sjouw</p>
+                <p class="absolute right-0 mr-6">Datum: geef hier een datum</p>
+            </div>
+        </footer>
+    </body>
+</html>

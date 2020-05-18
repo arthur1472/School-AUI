@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profiel</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="homepagina.html">Home</a>
+                <a href="profielpagina.html">Profiel</a>
+                <a href="voortgangpagina.html">Voortgang</a>
+
+                <span>Arthur</span>
+                <img src="https://via.placeholder.com/50x50">
+            </nav>
+        </header>
+        <section>
+            <h1>Profiel</h1>
+            <form method="POST">
+                <label for="firstName">Voornaam:</label>
+                <input id="firstName" name="firstName" type="text">
+                <br>
+                <label for="lastName">Achternaam:</label>
+                <input id="lastName" name="lastName" type="text">
+                <br>
+                <label for="address">Adres:</label>
+                <textarea id="address" name="address"></textarea>
+                <br>
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email">
+                <br>
+                <label for="phone">Telefoonnr:</label>
+                <input id="phone" name="phone" type="text">
+                <br>
+                <label>Geslacht:</label>
+                <input id="man" name="gender" type="radio"> <label for="man">Man</label>
+                <input id="woman" name="gender" type="radio"> <label for="woman">Vrouw</label>
+                <br>
+                <label for="birthDay">Geboortedatum:</label>
+                <input id="birthDay" name="birthDay" type="date">
+                <br>
+                <label for="studentNumber">Studentennr:</label>
+                <input id="studentNumber" name="studentNumber" type="number">
+                <br>
+                <label for="class">Klas:</label>
+                <select id="class" name="class">
+                    <option value="V1A">V1A</option>
+                    <option value="V1B">V1B</option>
+                    <option value="V1C">V1C</option>
+                    <option value="V1D">V1D</option>
+                    <option value="V1E">V1E</option>
+                    <option value="V1F">V1F</option>
+                    <option value="V1G">V1G</option>
+                </select>
+                <br>
+                <label>Gekozen Studierichting:</label>
+                <input id="sne" name="study" type="radio"> <label for="sne">SNE</label>
+                <input id="bim" name="study" type="radio"> <label for="bim">BIM</label>
+                <input id="sie" name="study" type="radio"> <label for="sie">SIE</label>
+                <input id="ti" name="study" type="radio"> <label for="ti">TI</label>
+                <br>
+                <label>Foto:</label>
+                <img src="https://via.placeholder.com/100x100">
+                <br>
+                <button>Change</button>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p>Deze opdracht is gemaakt in het kaden van het vak Analyse & User Interfaces</p>
+            <p>Auteur: Arthur Sjouw</p>
+            <p>Datum: geef hier een datum</p>
+        </footer>
+    </body>
+</html>

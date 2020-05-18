@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Voortgang</title>
+        <script src="main.js" type="text/javascript"></script>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-yellow-400 border-b-8 border-blue-600 inline-flex w-full h-20">
+            <nav class="flex flex-wrap items-end">
+                <a class="border-t border-r border-black px-5 py-1 bg-white" href="homepagina.html">Home</a>
+                <a class="border-t border-r border-black px-5 py-1 bg-white" href="profielpagina.html">Profiel</a>
+                <a class="border-t border-r border-black px-5 py-1 bg-blue-600 text-white" href="voortgangpagina.html">Voortgang</a>
+            </nav>
+            <div class="flex flex-wrap align-middle items-center mt-3 absolute right-0 mr-3">
+                <p class="text-center mr-4">Arthur</p>
+                <img class="rounded rounded-full" src="https://via.placeholder.com/50x50">
+            </div>
+        </header>
+        <section class="mt-10 ml-16">
+            <h1 class="text-3xl font-bold mb-6">Voortgang</h1>
+            <div class="flex">
+                <div class="w-1/2 flex flex-col">
+                    <div>
+                        <table>
+                            <thead class="border-2 border-black border-collapse bg-green-300">
+                            <tr>
+                                <td>Vakcode</td>
+                                <td class="text-center">ECTS</td>
+                                <td>Datum behaald</td>
+                            </tr>
+                            </thead>
+                            <tbody class="border-2 border-black border-collapse bg-green-300">
+                            <tr>
+                                <td>TICT-V1PROG-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" value="2020-02-22" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1CSN-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" value="2020-02-01" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1ICOR-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" value="2020-04-01" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1MOD-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" value="2020-03-30" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1PROF-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" value="2020-01-19" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1IDP-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" value="2020-04-13" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TCIF-V1AUI-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1OODC-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" class="bg-green-300"></td>
+                            </tr>
+                            <tr>
+                                <td>TICT-V1GP-15</td>
+                                <td><input type="number" name="ects" value="5" class="bg-green-300 text-center"></td>
+                                <td><input type="date" name="dateAchieved" class="bg-green-300"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <button type="button" class="mt-4 bg-gray-400 text-black px-8 py-2" onclick="showModal()">Bereken Studietempo</button>
+                    </div>
+
+                </div>
+
+                <div class="w-1/2 flex-col flex">
+                    <div>
+                        <p class="w-24 inline-block">Student: </p><p class="w-0 inline">Jens</p>
+                    </div>
+                    <div>
+                        <p class="w-24 inline-block">Telefoon: </p><p class="w-0 inline">0612345678</p>
+                    </div>
+                    <div>
+                        <p class="w-24 inline-block">Email: </p><p class="w-0 inline">arthur.sjouw@student.hu.nl</p>
+                    </div>
+                    <div class="w-full mt-10">
+                        <img class="border border-black" src="https://via.placeholder.com/300x100">
+                    </div>
+
+                    <div class="w-full mt-10">
+                        <img src="https://via.placeholder.com/300x100">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        </section>
+        <footer class="absolute bottom-0 border-t-4 border-black w-full italic">
+            <div class=" flex flex-wrap justify-center w-full my-4">
+                <p>Deze opdracht is gemaakt in het kaden van het vak Analyse & User Interfaces</p>
+            </div>
+            <div class="flex flex-wrap mb-4">
+                <p class="ml-6">Auteur: Arthur Sjouw</p>
+                <p class="absolute right-0 mr-6">Datum: geef hier een datum</p>
+            </div>
+        </footer>
+
+        <div id="ectsModal" class="hidden flex items-center justify-center fixed left-0 bottom-0 w-full h-full">
+            <div onclick="closeModal()" class="flex items-center justify-center fixed left-0 bottom-0 w-full h-full bg-gray-800 opacity-75"></div>
+            <div class="bg-white rounded-lg w-1/3 z-10">
+                <div class="flex items-center w-full bg-gray-400 p-4 rounded-t-lg">
+                    <div class="text-gray-900 font-medium text-lg">Studietempo</div>
+                    <svg onclick="closeModal()" class="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/>
+                    </svg>
+                </div>
+
+                <div class="flex flex-col justify-center text-center p-4 bg-purple-500">
+                    <div>
+                        <p>Je hebt tot nu toe <span id="ectsTotal" style="color: #24fc03;"></span> ECTS behaald.</p>
+                    </div>
+                    <div class="mt-3">
+                        <p>Je huidige studietempo is:</p>
+                        <div>
+                            <span id="ectsPerMonth" class="text-yellow-300"></span><p class="ml-1 inline"> ECTS / mnd.</p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p>Op basis van dit studietempo heb je <span id="ectsMonths" class="text-yellow-300"></span> mnd nodig voor je P.</p>
+                    </div>
+                    <div class="mt-3">
+                        <button onclick="closeModal()" type="button" class="py-1 px-12 border-black border bg-gray-300">OK</button>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
