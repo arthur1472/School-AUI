@@ -23,9 +23,8 @@ window.onload = function () {
         methods: {
             addTable() {
                 let newTable = {...this.freeTableObject};
-                newTable.number = this.lastTableNumber + 1;
+                newTable.number = this.firstFreeTableNumber();
                 this.tables.push(newTable);
-                this.lastTableNumber++;
             },
             removeTable(tableNumber) {
                 this.tables = this.tables.filter((table) => {
@@ -50,20 +49,15 @@ window.onload = function () {
                     }
                 })
             },
-            // setTableFree(tableNumber) {
-            //     this.tables.forEach((table) => {
-            //         if (table.number === tableNumber) {
-            //             table.status = this.freeStatus;
-            //         }
-            //     })
-            // },
-            // setTableReserved(tableNumber) {
-            //     this.tables.forEach((table) => {
-            //         if (table.number === tableNumber) {
-            //             table.status = this.reservedStatus;
-            //         }
-            //     })
-            // },
+            firstFreeTableNumber() {
+                if (this.deletedTableNumbers.length > 0) {
+                    this.deletedTableNumbers.sort((a, b) => a - b);
+                    return this.deletedTableNumbers.shift();
+                }
+
+                this.lastTableNumber++;
+                return this.lastTableNumber;
+            }
         },
         computed: {
             freeTables() {
@@ -71,18 +65,15 @@ window.onload = function () {
                     if (table.status === 'free') {
                         return table;
                     }
-                })
+                }).sort((a, b) => a.number - b.number)
             },
             reservedTables() {
                 return this.tables.filter((table) => {
                     if (table.status === 'reserved') {
                         return table;
                     }
-                })
+                }).sort((a, b) => a.number - b.number)
             },
-            firstFreeTableNumber() {
-                // this.lastTableNumber
-            }
         }
 
     })
